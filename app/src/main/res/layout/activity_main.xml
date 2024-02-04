@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/nombre"
+        android:id="@+id/nombres"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/apellidos"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -42,10 +42,10 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+        app:layout_constraintTop_toBottomOf="@+id/nombres" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/telefono"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -53,13 +53,13 @@
         android:layout_marginEnd="10dp"
         android:ems="10"
         android:hint="@string/telefono"
-        android:inputType="text"
+        android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/apellidos" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnprocesar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -68,6 +68,6 @@
         android:text="@string/btn_procesar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/telefono" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
