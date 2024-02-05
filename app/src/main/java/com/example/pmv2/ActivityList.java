@@ -18,9 +18,7 @@ public class ActivityList extends AppCompatActivity {
 
     SQLiteConexion conexion;
     ListView listpersonas;
-
     ArrayList<Personas> lista;
-
     ArrayList<String> Arreglo;
 
     @Override
