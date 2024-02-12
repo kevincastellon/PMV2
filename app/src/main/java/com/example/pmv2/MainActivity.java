@@ -15,7 +15,7 @@ import Configuracion.Transacciones;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText nombres, apellidos, edad, correo;
+    EditText nombres, apellidos, edad, correo, direccion;
     Button btnproceso;
 
 
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         apellidos = (EditText) findViewById(R.id.apellidos);
         edad = (EditText) findViewById(R.id.edad);
         correo = (EditText) findViewById(R.id.correo);
+        direccion = (EditText) findViewById(R.id.direccion);
         btnproceso = (Button) findViewById(R.id.btnprocesar);
 
         btnproceso.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
         valores.put(Transacciones.apellidos, apellidos.getText().toString());
         valores.put(Transacciones.edad, edad.getText().toString());
         valores.put(Transacciones.correo, correo.getText().toString());
+        valores.put(Transacciones.direccion, direccion.getText().toString());
+
 
         Long resultado = db.insert(Transacciones.TablePersonas, Transacciones.id, valores);
 
